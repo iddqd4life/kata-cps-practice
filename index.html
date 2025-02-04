@@ -8,28 +8,28 @@
 <body>
     <header>
         <div class="header-container">
-            <button class="pink-button header-container__button">
-                <img src="images/burger.svg" alt="Меню">
+            <button class="header-container__button">
+                <span class="pink-button pink-button--menu"></span>
             </button>
             <span class="separator"></span>
             <a href="index.html" class="logo header__logo">
                 <img src="images/cps.svg" alt="CPS" class="logo__home-link">
             </a>
-            <button class="pink-button additional-button header-container__button">
-                <img src="images/call.svg" alt="Позвонить">
+            <button class="additional-button header-container__button">
+                <span class="pink-button pink-button--call"></span>
             </button>
-            <button class="pink-button additional-button header-container__button">
-                <img src="images/message.svg" alt="Написать">
+            <button class="additional-button header-container__button">
+                <span class="pink-button pink-button--message"></span>
             </button>
-            <button class="pink-button additional-button header-container__button">
-                <img src="images/contact.svg" alt="Контакт">
+            <button class="additional-button header-container__button">
+                <span class="pink-button pink-button--contact"></span>
             </button>
             <span class="separator"></span>
-            <button class="pink-button header-container__button">
-                <img src="images/request.svg" alt="Заявка">
+            <button class="header-container__button">
+                <span class="pink-button pink-button--request"></span>
             </button>
-            <button class="pink-button header-container__button">
-                <img src="images/status.svg" alt="Статус">
+            <button class="header-container__button">
+                <span class="pink-button pink-button--status"></span>
             </button>
         </div>
     </header>
@@ -39,20 +39,20 @@
                 Услуги и сервисы
             </h1>
             <div class="service-buttons">
-                <p class="service-buttons__name">Оставить заявку</p>
-                <button class="pink-button service-buttons__button">
-                    <img src="images/request.svg" alt="Заявка">
+                <button class="service-buttons__button">
+                    Оставить заявку
+                    <span class="pink-button pink-button--request"></span>
                 </button>
-                <p class="service-buttons__name">Статус ремонта</p>
-                <button class="pink-button service-buttons__button">
-                    <img src="images/status.svg" alt="Статус">
+                <button class="service-buttons__button">
+                    Статус ремонта
+                    <span class="pink-button pink-button--status"></span>
                 </button>
             </div>
         </section>
-        <nav>
-            <ul class="nav-list nav-list__container">
-                <li class="nav-list__item nav-list__item--active">
-                    <a href="#" class="nav-list__link">Ремонтируемые бренды</a>
+        <nav class="main-nav">
+            <ul class="nav-list main-nav__list">
+                <li class="nav-list__item">
+                    <a href="#" class="nav-list__link nav-list__link--hover">Ремонтируемые бренды</a>
                 </li>
                 <li class="nav-list__item">
                     <a href="#" class="nav-list__link">Дополнительные услуги</a>
@@ -75,16 +75,17 @@
             </ul>
         </nav>
         <article class="preview-post">
-            <section class="text-block text-block__container">
-                <p class="text-block__item">
-                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-                </p>
-                <p class="text-block__item">
-                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
-                </p>
-                <button class="read-more read-more__button">
-                    <img src="images/readmore.svg" alt="Стрелка вниз" class="read-more__icon">
-                    <span class="read-more__text">Читать далее</span>
+            <section class="preview-post__container">
+                <div class="text-block">
+                    <p class="text-block__item">
+                        Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                    </p>
+                    <p class="text-block__item">
+                        Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+                    </p>
+                </div>
+                <button class="read-more text-block__button">
+                    Читать далее
                 </button>
             </section>
             <img src="images/cps-photo.jpg" alt="Фото вывески CPS" class="preview-post__image">
