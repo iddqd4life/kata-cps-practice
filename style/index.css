@@ -76,8 +76,11 @@ button {
     display: none;
 }
 
-.header__logo {
+.logo {
     text-decoration: none;
+}
+
+.header__logo {
     margin-right: auto;
 }
 
@@ -214,6 +217,119 @@ main {
     align-items: flex-end;
 }
 
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+    height: 100vh;
+    position: fixed;
+    max-width: 320px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2),
+                -2px 0 4px 0 rgba(69, 79, 126, 0.02);
+}
+
+.side-bar__header {
+    padding: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.side-bar__button:last-child {
+    margin-left: auto;
+}
+
+.side-bar__logo {
+    margin-left: 16px;
+}
+
+.pink-button--cross {
+    background-image: url(../images/cross.svg);
+}
+
+.pink-button--search {
+    background-image: url(../images/search.svg);
+}
+
+.side-nav__link {
+    text-decoration: none;
+    color: #1B1C21;
+    padding: 16px 24px;
+    display: block
+}
+
+.side-nav__link--active {
+    background-image: url(../images/header.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    color: #7E7E82;
+}
+
+.side-bar__footer {
+    margin-top: auto;
+}
+
+.side-footer {
+    padding: 32px 24px;
+}
+
+.side-footer__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.side-footer__link {
+    display: block;
+    color: #1B1C21;
+    text-decoration: none;
+}
+
+.side-footer__link--mail {
+    margin-bottom: 12px;
+}
+
+.side-footer__link--tel {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.side-footer__lang {
+    display: flex;
+    gap: 7px;
+}
+
+.side-footer__lang-link {
+    text-decoration: none;
+    color: #1B1C21;
+}
+
+.side-footer__lang-link--active {
+    color: #7E7E82;
+}
+
+.side-bar__button--hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.side-bar__button--hover-scale:hover {
+    transform: scale(1.2);
+}
+
+.side-nav__link--hover-color {
+    transition: color 0.3s ease;
+}
+
+.side-nav__link--hover-color:hover {
+    color: #41F6D7;
+}
+
 @media only screen and (min-width: 768px) {
     .separator {
         display: block;
@@ -284,5 +400,9 @@ main {
 
     .text-block__button {
         margin-top: 14px;
+    }
+
+    .side-bar {
+        display: none;
     }
 }
